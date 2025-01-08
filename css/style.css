@@ -30,6 +30,11 @@ html{
 body{
   overflow-x: hidden;
 }
+.body_quote{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 section{
   padding:3rem 2rem;
@@ -278,7 +283,8 @@ header{
   flex-flow: row;
   flex-wrap: wrap;
   gap: 1.5rem;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
 }
 
 .service .box-container .box:nth-child(even){
@@ -306,9 +312,18 @@ header{
   font-size: 2.5rem;
   color: var(--color);
   margin-bottom: 1rem;
-  margin-top: 10rem;
-  text-align: center;
+  margin-top: 2rem;
+  /* text-align: center; */
+  text-align: -webkit-left;
 }
+
+/* .mar_top{ */
+  /* font-size: 2.5rem;
+  color: var(--color);
+  margin-bottom: 1rem; */
+  /* margin-top: auto; */
+  /* text-align: center; */
+/* } */
 .service .box-container .box .content p{
   text-align: justify;
 }
@@ -559,6 +574,12 @@ header{
 
 .faq .row .accordion-container .accordion:nth-child(1) .accordion-body{
   display: block;
+}
+
+
+label.text_align1{
+  font-size: 2rem;
+  float: left;
 }
 
 .footer{
